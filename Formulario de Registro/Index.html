@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <h1> ¡Registrate y unete a la comunidad! </h1>
+        <form action="/registro" method="POST">
+            <div>
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="Nombre" name="Nombre" >
+            </div>
+            <div>
+                <label for="Apellido">Apellido:</label>
+                <input type="text" id="Apellido" name="Apellido" >
+            </div>
+            <div>
+                <label for="Email">Correo Electronico</label>
+                <input type="email" id="Email" name="Email" >
+            </div>
+            <div>
+                <label for="Contraseña">Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" >
+            </div>
+            <div>
+                <label for="Contraseña">Confirmar Contraseña:</label>
+                <input type="password" id="Contraseña" name="Contraseña" >
+            </div>
+            <div>
+                <label for="Fecha">Fecha de Nacimiento:</label>
+                <input type="date" id="Nombre" name="Fecha">
+            </div>
+            <div>
+                <label> Genero:</label>
+                <input type="radio" id="Masculino" name="Genero" value="Masculino">
+                <label for="Masculino">Masculino</label>
+                <input type="radio" id="Femenino" name="Genero" value="Femenino">
+                <label for="Femenino">Femenino</label>
+                <input type="radio" id="Otro" name="Genero" value="Otro">
+                <label for="Otro">Prefiero no decirlo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="Terminos" name="Terminos" required>
+                <label for="Terminos">Acepto los terminos y condiciones</label>
+            </div>
+            <div>
+                <label for="comentarios">Una descripcion de mi mismo:</label>
+            </div>
+            <div>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="interes">Selecciona tus intereses:</label>
+            <div>
+                <select name="interes" id="interes">
+                    <option value="Musica">Musica</option>
+                    <option value="Deportes">Deportes</option>
+                    <option value="Viajes">Viajes</option>
+                    <option value="Tecnologia">Tecnologia</option>>
+                </select>
+            </div>
+            <input type="submit" value="¡Registrarse!">
+        </form>
+
+    </body>
+    </html>
